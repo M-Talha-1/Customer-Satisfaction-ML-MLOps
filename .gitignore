@@ -17,6 +17,7 @@ venv.bak/
 dist/
 build/
 *.egg
+*.zen
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
