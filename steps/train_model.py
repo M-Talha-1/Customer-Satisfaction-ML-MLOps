@@ -2,11 +2,11 @@ import logging
 
 import pandas as pd
 from zenml import step
-from zenml.client import Client
 
 from src.model_training import LinearRegressionModel
 from sklearn.base import RegressorMixin
 # from .config import ModelNameConfig
+
 
 @step()
 def train_model(
