@@ -11,7 +11,7 @@ from sklearn.base import RegressorMixin
 
 experiment_track = Client().active_stack.experiment_tracker
 
-@step(experiment_tracker=experiment_track.name)
+@step(experiment_tracker=experiment_track.name, enable_cache=False)
 def train_model(
     X_train: pd.DataFrame,
     y_train: pd.Series
